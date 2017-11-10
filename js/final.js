@@ -17,7 +17,7 @@ var Salary = {
         return this.basic_salary - (this.nssf + this.nhif + this.other_deduction);
     },
 
-    //this is a function too
+    //this is a function too which uses a closure netSalary()
     displayNetSalary : function () {
         console.log("Your net salary = KSh " + this.netSalary())
         alert("Your net salary = KSh " + this.netSalary())
