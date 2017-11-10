@@ -22,13 +22,12 @@ var Salary = {
         console.log("Your net salary = KSh " + this.netSalary())
     }
 }
-Salary.basic_salary = document.getElementsByName("basic-salary")
-Salary.nssf = document.getElementsByName("nssf")
-Salary.nhif = document.getElementsByName("nhif")
-Salary.other_deduction = document.getElementsByName("other-deduction")
 
-console.log(Salary.displayNetSalary());
+Salary.basic_salary = document.getElementById("basic-salary").value
+Salary.nssf = document.getElementById("nssf").value
+Salary.nhif = document.getElementById("nhif").value
+Salary.other_deduction = document.getElementById("other-deduction").value
 
-onCalculateSubmit = function () {
+function onCalculateSubmit () {
     alert(Salary.displayNetSalary())
 }
