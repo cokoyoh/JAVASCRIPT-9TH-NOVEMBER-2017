@@ -1,7 +1,7 @@
 // Whole-script strict mode syntax enabled here
 'use strict';
 
-//Object defined here
+//Object defined here with all the functions operating on it defined inside it. This is encapsulation
 var Salary = {
     basic_salary : 20000,
     nhif : 234,
